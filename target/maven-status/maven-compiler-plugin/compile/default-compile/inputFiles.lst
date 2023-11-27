@@ -1,9 +1,11 @@
-C:\Users\cetecom\Documents\NetBeansProjects\HoytsMarkPlanet\src\main\java\CRUD\CRUD.java
+C:\Users\cetecom\Documents\NetBeansProjects\HoytsMarkPlanet\src\main\java\duoc\cl\hoytsmarkplanet\DTO\PeliculaDTO.java
 C:\Users\cetecom\Documents\NetBeansProjects\HoytsMarkPlanet\src\main\java\duoc\cl\hoytsmarkplanet\Views\ListarPelicula.java
 C:\Users\cetecom\Documents\NetBeansProjects\HoytsMarkPlanet\src\main\java\duoc\cl\hoytsmarkplanet\HoytsMarkPlanet.java
+C:\Users\cetecom\Documents\NetBeansProjects\HoytsMarkPlanet\src\main\java\duoc\cl\hoytsmarkplanet\Service\IPelicula.java
 C:\Users\cetecom\Documents\NetBeansProjects\HoytsMarkPlanet\src\main\java\duoc\cl\hoytsmarkplanet\Views\AgregarPelicula.java
-C:\Users\cetecom\Documents\NetBeansProjects\HoytsMarkPlanet\src\main\java\duoc\cl\hoytsmarkplanet\DTO\Pelicula.java
 C:\Users\cetecom\Documents\NetBeansProjects\HoytsMarkPlanet\src\main\java\duoc\cl\hoytsmarkplanet\Views\EliminarPelicula.java
 C:\Users\cetecom\Documents\NetBeansProjects\HoytsMarkPlanet\src\main\java\duoc\cl\hoytsmarkplanet\Views\EditarPelicula.java
 C:\Users\cetecom\Documents\NetBeansProjects\HoytsMarkPlanet\src\main\java\duoc\cl\hoytsmarkplanet\Views\VentanaModificar.java
+C:\Users\cetecom\Documents\NetBeansProjects\HoytsMarkPlanet\src\main\java\duoc\DAO\PeliculaDAO.java
 C:\Users\cetecom\Documents\NetBeansProjects\HoytsMarkPlanet\src\main\java\duoc\cl\hoytsmarkplanet\Views\MenuPrincipal.java
+C:\Users\cetecom\Documents\NetBeansProjects\HoytsMarkPlanet\src\main\java\duoc\cl\hoytsmarkplanet\Service\PeliculaService.java

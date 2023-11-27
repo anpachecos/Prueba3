@@ -1,7 +1,7 @@
 package duoc.cl.hoytsmarkplanet.Views;
 
-import DAO.DAO;
-import duoc.cl.hoytsmarkplanet.DTO.Pelicula;
+import duoc.DAO.PeliculaDAO;
+import duoc.cl.hoytsmarkplanet.DTO.PeliculaDTO;
 import duoc.cl.hoytsmarkplanet.Service.PeliculaService;
 import static javax.swing.WindowConstants.DISPOSE_ON_CLOSE;
 
@@ -18,7 +18,7 @@ public class VentanaModificar extends javax.swing.JFrame {
         setLocationRelativeTo(null);
         this.peliculaService = new PeliculaService();
         
-        Pelicula pel = this.peliculaService.obtenerPelicula(id);
+        PeliculaDTO pel = this.peliculaService.obtenerPelicula(id);
         campoAnno.setText(String.valueOf(pel.getAño()));
         campoDirector.setText(pel.getDirector());
         campoDuracion.setText(String.valueOf(pel.getDuracion()));
@@ -160,7 +160,7 @@ public class VentanaModificar extends javax.swing.JFrame {
         int dura = Integer.valueOf(campoDuracion.getText());
         String genero = campoGenero.getText();  
         
-        Pelicula mov = new Pelicula(tit, dire, anno, dura, genero);
+        PeliculaDTO mov = new PeliculaDTO(tit, dire, anno, dura, genero);
         
         this.peliculaService.modificarPelicula(mov, idMovie);
         

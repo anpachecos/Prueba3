@@ -4,8 +4,8 @@
  */
 package duoc.cl.hoytsmarkplanet.Service;
 
-import DAO.DAO;
-import duoc.cl.hoytsmarkplanet.DTO.Pelicula;
+import duoc.DAO.PeliculaDAO;
+import duoc.cl.hoytsmarkplanet.DTO.PeliculaDTO;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
@@ -20,14 +20,14 @@ import javax.swing.table.DefaultTableModel;
 public class PeliculaService implements IPelicula {
     
     
-    private final DAO peliculaDAO;
+    private final PeliculaDAO peliculaDAO;
 
     public PeliculaService() {
-        this.peliculaDAO = new DAO();
+        this.peliculaDAO = new PeliculaDAO();
         peliculaDAO.conectar();
     }
     
-    public void agregarPelicula(Pelicula movie) {
+    public void agregarPelicula(PeliculaDTO movie) {
         try {
             peliculaDAO.conectar(); 
             String insertSQL
@@ -74,7 +74,7 @@ public class PeliculaService implements IPelicula {
         }
     }
 
-    public void modificarPelicula(Pelicula movie, int id) {
+    public void modificarPelicula(PeliculaDTO movie, int id) {
 
         String modSQL = "UPDATE movie SET titulo = ?, director = ?, año = ?, duracion = ?, genero = ? WHERE id = ?;";
 
@@ -197,7 +197,7 @@ public class PeliculaService implements IPelicula {
         }
     }
 
-    public Pelicula obtenerPelicula(int id) {
+    public PeliculaDTO obtenerPelicula(int id) {
         String listSQL = "SELECT * FROM movie WHERE id = " + id + ";";
 
         try {
@@ -211,17 +211,17 @@ public class PeliculaService implements IPelicula {
                 String anno = String.valueOf(rs.getInt("año"));
                 String duracion = String.valueOf(rs.getInt("duracion"));
                 String genero = rs.getString("genero");
-                Pelicula pel = new Pelicula(titulo, director, Integer.valueOf(anno), Integer.valueOf(duracion), genero);
+                PeliculaDTO pel = new PeliculaDTO(titulo, director, Integer.valueOf(anno), Integer.valueOf(duracion), genero);
                 st.close();
                 return pel;
             } else {
                 st.close();
-                return new Pelicula("", "", 0, 0, "");
+                return new PeliculaDTO("", "", 0, 0, "");
             }
 
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, "Ha ocurrido un error en conexion: " + e.getMessage(), "Error", JOptionPane.PLAIN_MESSAGE);
-            return new Pelicula("", "", 0, 0, "");
+            return new PeliculaDTO("", "", 0, 0, "");
         }
     }
 }

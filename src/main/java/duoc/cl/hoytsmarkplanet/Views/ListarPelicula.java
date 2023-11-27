@@ -1,7 +1,7 @@
 
 package duoc.cl.hoytsmarkplanet.Views;
 
-import DAO.DAO;
+import duoc.DAO.PeliculaDAO;
 import duoc.cl.hoytsmarkplanet.Service.PeliculaService;
 import javax.swing.table.DefaultTableModel;
 

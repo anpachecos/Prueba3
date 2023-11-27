@@ -8,7 +8,7 @@ package duoc.cl.hoytsmarkplanet.DTO;
  *
  * @author cetecom
  */
-public class Pelicula {
+public class PeliculaDTO {
     private String titulo;
     private String director;
     private int año;
@@ -17,7 +17,7 @@ public class Pelicula {
     
     //clase > identificador > instancia > constructor
 
-    public Pelicula(String titulo, String director, int año, int duracion, String genero) {
+    public PeliculaDTO(String titulo, String director, int año, int duracion, String genero) {
         this.titulo = titulo;
         this.director = director;
         this.año = año;

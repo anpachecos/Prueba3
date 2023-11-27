@@ -4,8 +4,8 @@
  */
 package duoc.cl.hoytsmarkplanet.Views;
 
-import DAO.DAO;
-import duoc.cl.hoytsmarkplanet.DTO.Pelicula;
+import duoc.DAO.PeliculaDAO;
+import duoc.cl.hoytsmarkplanet.DTO.PeliculaDTO;
 import duoc.cl.hoytsmarkplanet.Service.PeliculaService;
 
 /**
@@ -170,7 +170,7 @@ public class AgregarPelicula extends javax.swing.JInternalFrame {
         int anno = Integer.valueOf(campoAnno.getText());
         int dura = Integer.valueOf(campoDuracion.getText());
         String genero = campoGenero.getText();
-        Pelicula mov = new Pelicula(tit, dire, anno, dura, genero);
+        PeliculaDTO mov = new PeliculaDTO(tit, dire, anno, dura, genero);
         peliculaService.agregarPelicula(mov);
 
     }//GEN-LAST:event_botonAgregarActionPerformed

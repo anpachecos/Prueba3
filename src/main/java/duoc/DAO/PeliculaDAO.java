@@ -1,6 +1,6 @@
-package DAO;
+package duoc.DAO;
 
-import duoc.cl.hoytsmarkplanet.DTO.Pelicula;
+import duoc.cl.hoytsmarkplanet.DTO.PeliculaDTO;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -10,7 +10,7 @@ import javax.swing.JOptionPane;
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
 
-public class DAO {
+public class PeliculaDAO {
 
     public Connection conexion = null;
 
